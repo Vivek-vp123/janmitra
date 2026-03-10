@@ -1,4 +1,4 @@
-// File: E:\JanMitra\JanMirta_1.0\apps\web\app\layout.tsx
+// File: D:\JanMitra\JanMirta_1.0\apps\web\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

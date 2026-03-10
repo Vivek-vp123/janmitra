@@ -47,10 +47,40 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 }
 
 
+// Validate ../../app/admin-dashboard/manage-ngos/page.tsx
+{
+  const handler = {} as typeof import("../../app/admin-dashboard/manage-ngos/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/manage-ngos">
+}
+
+// Validate ../../app/admin-dashboard/manage-societies/page.tsx
+{
+  const handler = {} as typeof import("../../app/admin-dashboard/manage-societies/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/manage-societies">
+}
+
+// Validate ../../app/admin-dashboard/ngo-analytics/page.tsx
+{
+  const handler = {} as typeof import("../../app/admin-dashboard/ngo-analytics/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard/ngo-analytics">
+}
+
+// Validate ../../app/admin-dashboard/page.tsx
+{
+  const handler = {} as typeof import("../../app/admin-dashboard/page.js")
+  handler satisfies AppPageConfig<"/admin-dashboard">
+}
+
 // Validate ../../app/admin/page.tsx
 {
   const handler = {} as typeof import("../../app/admin/page.js")
   handler satisfies AppPageConfig<"/admin">
+}
+
+// Validate ../../app/auth/forgot-password/page.tsx
+{
+  const handler = {} as typeof import("../../app/auth/forgot-password/page.js")
+  handler satisfies AppPageConfig<"/auth/forgot-password">
 }
 
 // Validate ../../app/auth/login/page.tsx
@@ -63,6 +93,18 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("../../app/auth/register/page.js")
   handler satisfies AppPageConfig<"/auth/register">
+}
+
+// Validate ../../app/ngo-dashboard/page.tsx
+{
+  const handler = {} as typeof import("../../app/ngo-dashboard/page.js")
+  handler satisfies AppPageConfig<"/ngo-dashboard">
+}
+
+// Validate ../../app/ngo-users/page.tsx
+{
+  const handler = {} as typeof import("../../app/ngo-users/page.js")
+  handler satisfies AppPageConfig<"/ngo-users">
 }
 
 // Validate ../../app/org/complaints/[id]/page.tsx
