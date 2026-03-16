@@ -153,6 +153,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 
 
 
+// Validate ../../app/admin-dashboard/layout.tsx
+{
+  const handler = {} as typeof import("../../app/admin-dashboard/layout.js")
+  handler satisfies LayoutConfig<"/admin-dashboard">
+}
+
 // Validate ../../app/layout.tsx
 {
   const handler = {} as typeof import("../../app/layout.js")
